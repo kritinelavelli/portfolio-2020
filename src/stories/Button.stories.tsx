@@ -8,9 +8,9 @@ export default {
   title: 'Example/Button',
   component: Button,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundcolor: { control: 'color' },
   },
-} as Meta;
+};
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 

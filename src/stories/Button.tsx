@@ -9,7 +9,7 @@ export interface ButtonProps {
   /**
    * What background color to use
    */
-  backgroundColor?: string;
+  backgroundcolor?: string;
   /**
    * How large should the button be?
    */
@@ -27,22 +27,19 @@ export interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-  return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
-  );
-};
+export class Button extends React.Component<ButtonProps> {
+
+  render() {
+    const mode = this.props.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+    return (
+      <button
+        type="button"
+        className={['storybook-button', `storybook-button--${this.props.size}`, mode].join(' ')}
+        style={{backgroundColor: this.props.backgroundcolor }}
+        {...this.props}
+      >
+        {this.props.label}
+      </button>
+    );
+  }
+}
