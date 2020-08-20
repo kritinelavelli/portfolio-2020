@@ -31,7 +31,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages",
-    "host-storybook": "npm run deploy-storybook   -- --remote=storybook"
+    "host-storybook": "npm run deploy-storybook   -- --remote=storybook",
+    "lint": "eslint */**/*.{js,ts,tsx} --quiet --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -59,6 +60,10 @@
     "@storybook/storybook-deployer": "^2.8.6",
     "@types/react-router-dom": "^5.1.5",
     "babel-loader": "^8.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "prettier": "^2.0.5",
     "react-is": "^16.13.1"
   }
 }
