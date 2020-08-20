@@ -10,7 +10,7 @@ export default {
   argTypes: {
     backgroundcolor: { control: 'color' },
   },
-};
+} as Meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
