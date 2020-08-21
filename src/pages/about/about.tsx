@@ -1,9 +1,9 @@
 import React from "react";
 import { Tabs } from "../../components/tabs/tabs";
 
-export const Home: React.FC = () => (
+export const About: React.FC = () => (
   <div>
     <Tabs />
-    <h2>Home</h2>
+    <h2>About</h2>
   </div>
 );
