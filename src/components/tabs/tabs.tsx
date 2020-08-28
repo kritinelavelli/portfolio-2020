@@ -1,12 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import "./tabs.scss";
 
-export const Tabs: React.FC = () => {
-  const items = ["Home", "About", "Process"];
-  const listItems = items.map((item) => (
-    <li>
-      <Link to={"/" + item.toLowerCase()}>{item}</Link>
-    </li>
-  ));
-  return <ul>{listItems}</ul>;
+export const Tabs: React.FC<any> = (props) => {
+  return <div className="tabs">{props.children}</div>;
+};
+
+export const Tab: React.FC<any> = (props: any) => {
+  return (
+    <h6 className={props.active ? "tabs-tab active" : "tabs-tab"}>
+      {props.children}
+    </h6>
+  );
 };

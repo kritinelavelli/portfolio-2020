@@ -1,0 +1,53 @@
+@import "./styles/typography.scss";
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 96px auto;
+}
+h1 {
+  @include text-title;
+}
+
+h2 {
+  @include text-heading-2;
+}
+
+h3 {
+  @include text-heading-3;
+}
+
+h4 {
+  @include text-heading-4;
+}
+
+h5 {
+  @include text-heading-5;
+}
+
+h6 {
+  @include text-heading-6;
+}
+
+figcaption {
+  @include text-caption;
+}
+
+p {
+  @include text-body;
+}
+.link {
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/color.scss";
+
+.tabs-tab {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 8px 4px;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  &.active {
+    border-bottom: solid 4px var(--secondary-color);
+  }
+  &:hover {
+    background-color: var(--surface-color);
+  }
+}
