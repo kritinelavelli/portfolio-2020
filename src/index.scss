@@ -7,11 +7,6 @@ body {
   height: 100%;
 }
 
-#root {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 96px auto;
-}
 h1 {
   @include text-title;
 }
@@ -43,11 +38,7 @@ figcaption {
 p {
   @include text-body;
 }
-.link {
-  text-decoration: none;
-  &:hover,
-  &:active,
-  &:visited {
-    color: inherit;
-  }
+
+a {
+  @include text-link;
 }

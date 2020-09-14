@@ -1,0 +1,11 @@
+@import "../../styles/typography.scss";
+.main-nav-link {
+  @include text-heading-6;
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+  }
+}

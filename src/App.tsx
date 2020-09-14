@@ -13,25 +13,27 @@ import { ActionBar } from "./components/action-bar/action-bar";
 
 function App() {
   return (
-    <Router>
-      <ActionBar />
-      <div className="app-content">
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/process">
-            <Process />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/*">
-            <Redirect to="/" />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <div className="root">
+      <Router>
+        <ActionBar />
+        <div className="app-content">
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/process">
+              <Process />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/*">
+              <Redirect to="/" />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </div>
   );
 }
 export default App;
