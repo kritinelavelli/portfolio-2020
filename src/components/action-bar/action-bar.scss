@@ -1,4 +1,8 @@
 .action-bar {
+  max-width: 1440px;
+  margin: auto;
+}
+.action-bar-header {
   display: flex;
   flex-direction: row;
   flex-grow: 1;

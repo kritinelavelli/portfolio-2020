@@ -1,16 +1,15 @@
-@import "../../styles/color.scss";
-
 .tabs-tab {
   text-transform: uppercase;
   display: inline-block;
   margin: 8px 4px;
   padding: 4px;
   border-radius: 4px;
+  color: var(--primary-color-71);
   cursor: pointer;
   &.active {
-    border-bottom: solid 4px var(--secondary-color);
+    color: var(--primary-color-55);
   }
   &:hover {
-    background-color: var(--surface-color);
+    color: var(--primary-color-86);
   }
 }

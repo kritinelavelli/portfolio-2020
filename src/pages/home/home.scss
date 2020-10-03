@@ -1,0 +1,37 @@
+.home {
+  max-width: 1440px;
+  margin: auto;
+}
+.home-intro {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+}
+.home-intro-text {
+  p {
+    max-width: 485px;
+  }
+}
+.home-design,
+.home-plus {
+  font-family: "Shadows Into Light", cursive;
+  color: var(--secondary-color);
+}
+.home-plus {
+  color: var(--highlight-color);
+}
+.home-intro-project {
+  align-items: center;
+  a,
+  img {
+    width: 100%;
+  }
+}
+.home-intro-project-text {
+  p {
+    max-width: 240px;
+  }
+}
