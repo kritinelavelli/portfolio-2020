@@ -1,14 +1,18 @@
 .home {
   max-width: 1440px;
+  padding: 0 36px;
   margin: auto;
+}
+.home-hero {
+  height: calc(100vh - 82px);
+  display: flex;
+  flex-direction: column;
 }
 .home-intro {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-grow: 1;
   justify-content: space-around;
-  align-items: center;
-  padding: 24px;
 }
 .home-intro-text {
   p {
@@ -25,9 +29,12 @@
 }
 .home-intro-project {
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   a,
   img {
-    width: 100%;
+    height: calc(100vh - 100px);
   }
 }
 .home-intro-project-text {

@@ -11,7 +11,7 @@
   line-height: 90px;
   color: var(--primary-color-100);
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 @mixin text-heading-2 {
@@ -57,6 +57,9 @@
   margin: 0;
   margin-bottom: 16px;
 }
+.text-heading-5 {
+  @include text-heading-5;
+}
 
 @mixin text-heading-6 {
   font-family: Ubuntu;
@@ -67,6 +70,9 @@
   color: var(--primary-color-100);
   margin: 0;
   margin-bottom: 16px;
+}
+.text-heading-6 {
+  @include text-heading-6;
 }
 
 @mixin text-caption {
