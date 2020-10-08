@@ -9,8 +9,11 @@ import { Home } from "./pages/home/home";
 import "./App.scss";
 import { About } from "./pages/about/about";
 import { Process } from "./pages/process/process";
+import { Hvz } from "./pages/hvz/hvz";
+import { HellWorld } from "./pages/hell-world/hell-world";
 import { ActionBar } from "./components/action-bar/action-bar";
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function App() {
   return (
     <div className="root">
@@ -23,6 +26,12 @@ function App() {
             </Route>
             <Route path="/process">
               <Process />
+            </Route>
+            <Route path="/hvz">
+              <Hvz />
+            </Route>
+            <Route path="/hellWorld">
+              <HellWorld />
             </Route>
             <Route exact path="/">
               <Home />

@@ -4,7 +4,6 @@
   justify-content: center;
   margin: 100px 0;
   .card-content {
-    max-width: 300px;
     h3 {
       margin-left: -56px;
       margin-bottom: 8px;
@@ -29,16 +28,17 @@
 }
 
 .card-image {
-  padding: 48px;
-  background-color: #eaeffa;
+  // padding: 48px;
+  // background-color: #eaeffa;
   // width: 60vw;
   // height: 30vw;
+  max-width: 960px;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   justify-content: center;
   img {
-    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+    // filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
     width: 100%;
   }
 }

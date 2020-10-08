@@ -1,6 +1,15 @@
 .action-bar {
   width: 100%;
   border-top: solid 8px var(--secondary-color);
+  &::after {
+    content: "";
+    width: 24px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    background-color: var(--highlight-color);
+    bottom: -200px;
+  }
 }
 .action-bar-header {
   display: flex;

@@ -8,7 +8,7 @@ export default {
   component: CardGrid,
 } as Meta;
 
-const Template: Story = (args) => <CardGrid />;
+const Template: Story = () => <CardGrid />;
 
 export const Default = Template.bind({});
 Default.args = {};

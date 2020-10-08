@@ -1,10 +1,9 @@
 import React from "react";
-import { CardGrid } from "../../components/card-grid/card-grid";
-import "./home.scss";
-import hero from "../../assets/hero.png";
+import "./hell-world.scss";
+import croppedKiosk from "../../assets/croppedKiosk.png";
 import { Link } from "react-router-dom";
 
-export const Home: React.FC = () => (
+export const HellWorld: React.FC = () => (
   <div className="home">
     <div className="home-hero">
       <div className="home-intro">
@@ -32,19 +31,8 @@ export const Home: React.FC = () => (
         </div>
       </div>
       <div className="home-intro-project">
-        <img src={hero} />
-        {/* <a>
-          <img src={hero} />
-        </a> */}
-        {/* <div className="home-intro-project-text">
-          <h5> Adaptive App Design</h5>
-          <p>
-            HCI graduate thesis Identifying and designing for device handedness.
-          </p>
-          <a>Read more {">>"}</a>
-        </div> */}
+        <img src={croppedKiosk} />
       </div>
     </div>
-    <CardGrid />
   </div>
 );
