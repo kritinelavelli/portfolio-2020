@@ -8,8 +8,8 @@ export const ActionBar: React.FC = () => {
   return (
     <div className="action-bar">
       <header className="action-bar-header">
-        <Link to="/">
-          <img src={logo} className="action-bar-logo" alt="logo" />
+        <Link className="action-bar-logo" to="/">
+          <img src={logo} alt="logo" />
         </Link>
         <MainNav />
       </header>
